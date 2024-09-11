@@ -73,6 +73,8 @@ After logging in as `renu`, I obtained the first flag.
 
 I checked if `renu` could run any `sudo` commands but found no access. I found another user, `lily`, and obtained the second flag from her home directory. I also noticed that her `.ssh` folder was accessible, allowing me to SSH into her account without a password.
 
+![Image 10](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Money%20Box/img/img10.png)
+
 ![Image 9](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Money%20Box/img/img9.png)
 
 ---
@@ -81,7 +83,6 @@ I checked if `renu` could run any `sudo` commands but found no access. I found a
 
 Once logged in as `lily`, I discovered that she could run `perl` with no password. I exploited this to spawn a root shell and grabbed the final flag.
 
-![Image 10](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Money%20Box/img/img10.png)
 ![Image 11](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Money%20Box/img/img11.png)
 
 ---
