@@ -73,4 +73,4 @@ I successfully logged in via SSH as `freddie`.
 
 Running `sudo -l` revealed that I could run **nmap** without a password. I exploited this to spawn a root shell:
 
-
+![Image 9](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Drifting%20Blue%20--%202/img/img9.png)
