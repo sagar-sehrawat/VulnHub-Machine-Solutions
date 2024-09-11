@@ -42,14 +42,14 @@ The source code revealed the name of a secret directory. I navigated to the dire
 
 ![Image 5](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Money%20Box/img/img5.png)
 
+![Image 6](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Money%20Box/img/img6.png)
+
 ---
 
 ## Step 6: Extracting Data from the Image
 
 The secret message looked like a password key. I used `steghide` to extract hidden data from the image I found earlier. It prompted me for a password, and the key from the secret directory worked. I extracted a `data.txt` file containing a username and the hint that the password is weak.
 (Hint : Secret Key 3xtr4ctd4t4 > extractdata)
-
-![Image 6](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Money%20Box/img/img6.png)
 
 ---
 
