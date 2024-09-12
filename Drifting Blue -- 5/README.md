@@ -38,7 +38,7 @@ After performing a brute force attack, I was able to crack the password for the 
 
 ## Step 5: Steganography
 
-During site enumeration, I found some pictures, one of which looked odd. I downloaded it and checked it for hidden data using steganography techniques. Luckily, I found the SSH password hidden in the image.
+During site enumeration, I found some pictures, one of which looked odd. I downloaded it and checked it for hidden data using steganography techniques. Luckily, I found the SSH password with Exiftool.
 
 ![Steganography Results](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Drifting%20Blue%20--%205/img/img6.png)
 
