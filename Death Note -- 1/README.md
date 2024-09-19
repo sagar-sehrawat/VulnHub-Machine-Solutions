@@ -17,18 +17,17 @@ Visited the website using the domain name and discovered a hint page suggesting 
 Enumerated paths and discovered `notes.txt` and `user.txt` files.
 
 ![img3](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Death%20Note%20--%201/img/img3.png)
+![img4](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Death%20Note%20--%201/img/img4.png)
 
 ## 3. Robots.txt and IP Access
 
 Discovered `robots.txt` using Gobuster but it wasn't accessible via the domain. Accessed it through the IP.
-
-![img4](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Death%20Note%20--%201/img/img4.png)
+![img5](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Death%20Note%20--%201/img/img5.png)
 
 ## 4. Image Analysis
 
 Downloaded the image and found that it was not an actual image file. It contained hints about the username in `user.txt` and potential password in `notes.txt`.
 
-![img5](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Death%20Note%20--%201/img/img5.png)
 ![img6](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Death%20Note%20--%201/img/img6.png)
 
 ## 5. SSH Brute Force
