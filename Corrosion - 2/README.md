@@ -54,12 +54,12 @@ In `jaye`’s home directory, I found a folder with an **interesting SUID file**
 ![SUID Binary Exploit](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Corrosion%20-%202/img/img11.png)
 
 ## Cracking the Hash
-I tried to extract the randy hash and successfully cracked it. The password was `07051986randy`. With this, I could escalate to root.
+It's a SHA-512 with salt take some time to crack I tried to extract the randy hash and successfully cracked it. The password was `07051986randy`. With this, I could escalate to root.
 
 ![Hash Cracked](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Corrosion%20-%202/img/img12.png)
 
 ## Final Privilege Escalation
-Using `sudo -l`, I noticed that I could run `randombase64.py` as root. Searching for more `base64` file in the system, I found it to be a **SUID binary**. After some tinkering, I managed to spawn a root shell by executing os.system('/bin/bash') in file.
+Using `sudo -l`, I noticed that I could run `randombase64.py` as root. Searching for more `base64` file in the system, I found it to be a **SUID perm**. After some tinkering, I managed to spawn a root shell by executing os.system('/bin/bash') in file.
 
 ![Privilege Escalation](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Corrosion%20-%202/img/img13.png)
 
@@ -68,11 +68,6 @@ Finally, I gained a root shell!
 
 ![Root Shell](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/Corrosion%20-%202/img/img14.png)
 
-## Conclusion
-This machine involved a mix of **web exploitation, privilege escalation using SUID binaries, and brute-forcing techniques**. The key was to explore various methods and not give up when things seemed stuck.
 
----
-
-### Author:
 - **Sagar Sehrawat**
-- [GitHub Profile](https://github.com/sagar-sehrawat)
+
