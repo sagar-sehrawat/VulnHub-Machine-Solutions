@@ -23,6 +23,7 @@ Next, I used `wpscan` to enumerate users and discovered three usernames. I then 
 
 ### Logging in as Jerry
 I logged into the WordPress site as **Jerry** and found **Flag 2**. After further enumeration, I was unable to obtain a reverse shell from the website, so I attempted to SSH into the machine with Jerry's and Tom's credentials.
+![jerry](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/DC-2/img/img7.png)
 
 ### SSH Access as Tom
 Tom's credentials worked for SSH, but I was greeted with a restricted shell. I investigated the shell and discovered that I could run `vi` from within the restricted shell, which allowed me to read **Flag 3**. The hint in Flag 3 suggested using `su`.
@@ -49,9 +50,6 @@ Once logged in as Jerry, I checked my sudo privileges and found that I could run
 ![Privilege Escalation](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/DC-2/img/img11.png)
 ![Final Flag](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/DC-2/img/img12.png)
 
-## Conclusion
-
-By enumerating the WordPress site, breaking into restricted shells, and leveraging `sudo` privileges, I was able to root the DC-2 machine and complete all the objectives.
 
 ### Author
 **Sagar Sehrawat**
