@@ -29,7 +29,7 @@ After cracking the admin hash, I logged into Joomla! and searched for entry poin
 
 ## Privilege Escalation
 
-Initially, there was only one flag in the root directory of the website. I started my enumeration using **LinPEAS** and found that the system was running a vulnerable kernel version.
+Initially, there was only one flag in the root directory mention in the website. I started my enumeration using **LinPEAS** and found that the system was running a vulnerable kernel version.
 
 ![LinPEAS Output - Vulnerable Kernel](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/DC-3/img/img8.png)
 
@@ -47,12 +47,8 @@ I researched the kernel vulnerability and found an exploit in **Exploit-DB**. Th
 After running the exploit, we successfully obtained a root shell.
 
 ![Root Shell Obtained](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/DC-3/img/img9.png)
-
-## Conclusion
-
-This challenge was a great mix of web exploitation and privilege escalation. We leveraged known vulnerabilities in Joomla! and the Linux kernel to gain root access. 
-
 ![Root Shell - Final Flag](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/DC-3/img/img10.png)
+
 
 - **Author**: Sagar Sehrawat  
 
