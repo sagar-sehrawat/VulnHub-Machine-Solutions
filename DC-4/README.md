@@ -3,12 +3,12 @@
 ## 1. Initial Nmap Scan
 I started by scanning the machine using Nmap and found that SSH and HTTP (Nginx) were running. 
 
+![Login Page](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/DC-4/img/img1.png)
+
 ## 2. Enumerating the Website
 After visiting the site, I found a login form. There wasn't anything interesting in the source code or directories, though I did discover some PHP files like `command.php`.
-
 I tried default usernames such as `admin` and `root`, and got a hit with the username `admin`.
 
-![Login Page](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/DC-4/img/img1.png)
 ![Login Success](https://github.com/sagar-sehrawat/VulnHub-Machine-Solutions/blob/main/DC-4/img/img2.png)
 
 ## 3. Exploiting `command.php`
